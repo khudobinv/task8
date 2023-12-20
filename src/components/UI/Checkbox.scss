@@ -1,0 +1,28 @@
+.custom-checkbox {
+    display: inline-block;
+  }
+  
+  .custom-checkbox input {
+    display: none;
+  }
+  
+  .custom-checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px; /* Расстояние от левого края метки до чекбокса */
+    cursor: pointer;
+    color: #ffffff; /* Белый цвет текста метки */
+  }
+  
+  .custom-checkbox input:checked + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Ширина чекбокса */
+    height: 20px; /* Высота чекбокса */
+    background-color: #0f172a; /* Цвет фона чекбокса при активном состоянии */
+    border: 1px solid #0f172a; /* Обводка чекбокса при активном состоянии */
+    border-radius: 5px; /* Радиус скругления */
+  }
+  
